@@ -9,6 +9,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/orange-helvetica.min.css" rel="stylesheet" integrity="sha384-A0Qk1uKfS1i83/YuU13i2nx5pk79PkIfNFOVzTcjCMPGKIDj9Lqx9lJmV7cdBVQZ" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/boosted.min.css" rel="stylesheet" integrity="sha384-laZ3JUZ5Ln2YqhfBvadDpNyBo7w5qmWaRnnXuRwNhJeTEFuSdGbzl4ZGHAEnTozR" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
   </head>
 
   <body >
@@ -20,24 +22,38 @@
           </a>
         </div>
 
-        <ul>
-          <li><a href="#">Football</a></li>
-          <li><a href="#">Basketball</a></li>
-          <li><a href="#">Athlétisme</a></li>
-          <li><a href="#">Tennis</a></li>
-          <li class="dropdown">
-              <a href="#">Autres &#9662;</a>
-          </li>
-          
-          <li class="search-bar">
-              <input type="text" placeholder="Recherche">
-              <button>&#128269;</button>
-          </li>
-        </ul>
-
-        <div class="user">
-          <img src="img/7.png" alt="img">
+        <div class="menu--nav">
+          <ul>
+            <li class="menu--exit">
+              <i class="fa fa-times"></i>
+            </li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Athlétisme</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li class="dropdown">
+                <a href="#">Autres &#9662;</a>
+            </li>
+            
+            <li class="search-bar">
+                <input type="text" placeholder="Recherche">
+                <button>&#128269;</button>
+            </li>
+          </ul>
         </div>
+        
+
+        <div class="d-flex align-items-center">
+
+          <div class="user">
+            <img src="img/7.png" alt="img">
+          </div>
+
+          <div class="menu--enter mx-3">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+
       </div>
     </nav>
     <!-- *********** -->
@@ -85,6 +101,23 @@
                 <div class="value">115</div>
             </div>
         </div>
+
+        <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+        </div> -->
       </div>
     </section>
 
@@ -203,7 +236,9 @@
             <p>Revivez les meilleurs moments à travers nos stories en dessous.</p>
           </div>
 
-          <div class="stories--container my-4 wow fadeInRight">
+
+          <div class="st-o">
+            <div class="stories--container my-4 wow fadeInRight">
               <div class="stories--container__elmts">
                 <a href="#">
                   <img src="img/7.png" alt="img">
@@ -254,7 +289,9 @@
               </div>
 
     
+            </div>
           </div>
+          
 
           <div class="story-link wow fadeInRight">
               <a href="#">
@@ -268,7 +305,7 @@
     </section>
 
     <!--**********************  -->
-    <section class=" container-lg mt-5">
+    <section class="container-lg mt-5">
       <div class="max2sport--pub wow fadeInLeft">
         <div class="row align-items-center">
           <div class="col-md-6 col-lg-6">
@@ -289,7 +326,7 @@
     <section class="packs wow fadeInRight">
       <div class="container-lg">
         <div class="row">
-          <div class="col-md-4 col-lg-4">
+          <div class="col-md-4 col-lg-4 mb-5">
             <div class="packs--card">
               <div class="packs--card__top">
                 <img src="img/3.png" alt="">
@@ -313,7 +350,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4">
+          <div class="col-md-4 col-lg-4 mb-5">
             <div class="packs--card">
               <div class="packs--card__top">
                 <img src="img/4.png" alt="">
@@ -365,7 +402,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4">
+          <div class="col-md-4 col-lg-4 mb-5">
             <div class="packs--card">
               <div class="packs--card__top">
                 <img src="img/5.png" alt="">

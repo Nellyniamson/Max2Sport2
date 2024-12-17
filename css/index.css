@@ -49,10 +49,62 @@ outline: none !important;
     padding: 20px 20px;
 }
 
+.navigation .menu--nav {
+    transition: all .3s ease-in-out;
+}
+
 .navigation1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 62em) {
+    .navigation .menu--nav {
+      height: 100vh;
+      width: 20rem;
+      position: fixed;
+      top: 0;
+      background: black;
+      box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
+      z-index: 111;
+      right: -100%;
+      padding: 2rem 1rem;
+    }
+    .navigation .menu--nav ul {
+      display: block !important;
+    }
+    .navigation .menu--nav ul li {
+      margin: 1rem;
+    }
+}
+  
+.navigation .menu--enter {
+display: none;
+font-size: 2rem;
+cursor: pointer;
+
+}
+
+@media only screen and (max-width: 62em) {
+.navigation .menu--enter {
+    display: block;
+}
+}
+  
+.navigation .menu--exit {
+display: none;
+cursor: pointer;
+}
+  
+.navigation .menu--exit i {
+font-size: 2rem;
+}
+
+@media only screen and (max-width: 62em) {
+.navigation .menu--exit {
+    display: block;
+}
 }
 
 .user img{
@@ -195,6 +247,10 @@ outline: none !important;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     gap: 10px;
+    /* overflow-x: auto;
+
+    white-space: nowrap;
+    scroll-snap-type: x mandatory; */
 }
 
 .stories--container__elmts {
@@ -253,12 +309,12 @@ outline: none !important;
     background-color: #D9D9D9;
     border-radius: 10px 10px 10px 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+    margin-bottom: 2rem;
 }
 
 .part-leftArticle__img img{
     width: 100%;
-    height: 23rem;
+    height: 22rem;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 
@@ -376,4 +432,34 @@ outline: none !important;
 .score {
     font-size: 24px;
     font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1071px) {
+    .max2sport--pubimg1{
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .st-o{
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .st-o:-webkit-scrollbar {
+        display: none;
+    }
+
+    .stories--container__elmts {
+        width: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .max2sport--pub__text{
+        /* text-align: start; */
+        text-align: center;
+    }
 }
