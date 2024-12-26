@@ -183,6 +183,7 @@ font-size: 2rem;
 
 .day {
     text-align: center;
+    cursor: pointer;
 }
 
 .day-name {
@@ -219,9 +220,34 @@ font-size: 2rem;
     /* max-width: 600px; */
 }
 
+.bottom-section ul{
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom-section ul li {
+    width: 32.90%;
+    text-align: center;
+}
+
+.bottom-section ul li button {
+    width: 100%;
+    display: block;
+}
+
+.details-section {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    /* background-color: #fff; */
+    /* border: 10px solid #ccc; */
+    border-radius: 10px;
+}
+
 .item {
     text-align: center;
     display: flex;
+    cursor: pointer;
     align-items: center;
 }
 
@@ -461,5 +487,26 @@ font-size: 2rem;
     .max2sport--pub__text{
         /* text-align: start; */
         text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .day-number {
+        font-size: 20px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+    .value{
+        margin-left: 3px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .day-number {
+        font-size: 18px;
     }
 }
